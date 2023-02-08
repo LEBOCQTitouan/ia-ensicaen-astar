@@ -1,4 +1,4 @@
-package edu.ensicaen.model.maze.strategy;
+package edu.ensicaen.model.maze.generation;
 
 import edu.ensicaen.model.maze.Maze;
 

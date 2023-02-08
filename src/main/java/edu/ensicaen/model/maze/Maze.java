@@ -2,8 +2,8 @@ package edu.ensicaen.model.maze;
 
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.cell.CellType;
-import edu.ensicaen.model.maze.strategy.MazeGenerationStrategy;
-import edu.ensicaen.model.maze.strategy.MazeOnlyPathGeneration;
+import edu.ensicaen.model.maze.generation.MazeGenerationStrategy;
+import edu.ensicaen.model.maze.generation.MazeOnlyPathGeneration;
 
 public class Maze {
     private final Cell[][] cells;
