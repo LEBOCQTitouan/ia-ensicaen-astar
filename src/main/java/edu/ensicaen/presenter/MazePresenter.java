@@ -69,7 +69,9 @@ public class MazePresenter implements Presenter {
                 agent = model.getAgent(AvailableAgents.ASTAR);
                 regenerateMaze = false;
             }
-            // update model if needed (trap, entity, etc.)
+            // update model evolution if needed (trap, entity, etc.) here
+            stepAgent();
+            // TODO implement button to compute all in one go
             updateModel = false;
         }
     }
