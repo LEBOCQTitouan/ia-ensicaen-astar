@@ -1,16 +1,17 @@
 package edu.ensicaen.presenter;
 
+import edu.ensicaen.model.agent.Astar.Astar;
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.maze.Maze;
 import edu.ensicaen.model.maze.generation.MazeRandomGeneration;
 import edu.ensicaen.view.display.MazePanel;
 import edu.ensicaen.view.logic.CellView;
-import edu.ensicaen.view.logic.Test;
 
 // TODO update only when needed
 public class MazePresenter implements Presenter {
     private final MazePanel display;
     private Maze model;
+    private Astar agent;
     private boolean updateModel;
     private boolean regenerateMaze;
     private boolean updateUI;

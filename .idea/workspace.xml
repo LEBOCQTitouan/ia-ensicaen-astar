@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Stable MVP model for astar display">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Implementing Agent.Astar squeletton">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Heuristic/Heuristic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Heuristic/ManhattanHeuristic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/CellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/CellType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,6 +66,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.ensicaen.view.logic" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.ensicaen.model.agent" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -90,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675853780694</updated>
       <workItem from="1675853783159" duration="6073000" />
-      <workItem from="1675861523115" duration="1147000" />
+      <workItem from="1675861523115" duration="2842000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -148,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675861935470</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementing simple maze display">
+      <created>1675863020429</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675863020429</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +191,9 @@
     <MESSAGE value="Fix on generation strategy for the maze" />
     <MESSAGE value="Package maze generation renamed and creating Astar class" />
     <MESSAGE value="Stable MVP model for astar display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stable MVP model for astar display" />
+    <MESSAGE value="Implementing simple maze display" />
+    <MESSAGE value="Implementing Agent.Astar squeletton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Agent.Astar squeletton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

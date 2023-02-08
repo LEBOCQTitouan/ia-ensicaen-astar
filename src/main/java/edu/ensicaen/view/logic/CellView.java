@@ -21,21 +21,11 @@ public class CellView implements Displayable {
 
     private void setColor(Graphics g) {
         switch (type) {
-            case WALL:
-                g.setColor(Color.BLACK);
-                break;
-            case START:
-                g.setColor(Color.GREEN);
-                break;
-            case END:
-                g.setColor(Color.RED);
-                break;
-            case PATH:
-                g.setColor(Color.BLUE);
-                break;
-            default:
-                g.setColor(Color.WHITE);
-                break;
+            case WALL -> g.setColor(Color.BLACK);
+            case START -> g.setColor(Color.GREEN);
+            case END -> g.setColor(Color.RED);
+            case DEFAULT -> g.setColor(Color.WHITE);
+            default -> g.setColor(Color.YELLOW);
         }
     }
 
