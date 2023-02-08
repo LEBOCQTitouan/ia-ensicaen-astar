@@ -65,12 +65,13 @@ public class MazePresenter implements Presenter {
     public void updateModel() {
         if (updateModel) {
             if (regenerateMaze) {
-                model = Maze.generateMaze(100, 100, new MazeRandomGeneration());
+                model = Maze.generateMaze(10, 10, new MazeRandomGeneration());
                 agent = model.getAgent(AvailableAgents.ASTAR);
                 regenerateMaze = false;
             }
             // update model evolution if needed (trap, entity, etc.) here
-            stepAgent();
+            if (!agent.isFinished())
+                stepAgent();
             // TODO implement button to compute all in one go
             updateModel = false;
         }

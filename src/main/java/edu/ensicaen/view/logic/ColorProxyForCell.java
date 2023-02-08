@@ -23,10 +23,10 @@ public class ColorProxyForCell {
             case START -> { return new Color(255, 0, 0); }
             case END -> { return new Color(0, 255, 0); }
             default -> {
-                if (maxWeight == 0)
+                if (maxWeight == 0 || weight == 0)
                     return new Color(255, 255, 255);
-                int color = (int) (255 * weight / maxWeight);
-                return new Color(color, color, color);
+                int color = (int) (240 * weight / maxWeight);
+                return new Color(color, color, 255);
             }
         }
     }

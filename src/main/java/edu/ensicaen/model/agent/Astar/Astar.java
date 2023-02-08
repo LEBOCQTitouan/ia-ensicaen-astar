@@ -6,15 +6,17 @@ import edu.ensicaen.model.agent.Astar.Heuristic.ManhattanHeuristic;
 import edu.ensicaen.model.cell.Cell;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class Astar implements Agent {
     private final AstarCell[][] cells;
     private final AstarCell start;
     private final AstarCell end;
+    private AstarCell current;
     private final PriorityQueue<AstarCell> openList;
     private final ArrayList<AstarCell> closedList;
-    private Heuristic heuristic;
+    private final Heuristic heuristic;
 
     public Astar(Cell[][] cells, Cell start, Cell end) {
         this(cells, start, end, new ManhattanHeuristic());
@@ -37,16 +39,6 @@ public class Astar implements Agent {
     }
 
     @Override
-    public void compute() {
-        // TODO
-    }
-
-    @Override
-    public void computeStep() {
-        // TODO
-    }
-
-    @Override
     public AstarCell[][] getCells() {
         return cells;
     }
@@ -54,5 +46,59 @@ public class Astar implements Agent {
     @Override
     public AstarCell getCell(int x, int y) {
         return cells[x][y];
+    }
+
+    @Override
+    public void compute() {
+        while (!isFinished()) {
+            computeStep();
+        }
+    }
+
+    private List<AstarCell> getNeighbours(Cell cell) {
+        List<AstarCell> neighbours = new ArrayList<>();
+        int x = cell.getX();
+        int y = cell.getY();
+
+        if (x > 0) { // TOP
+            neighbours.add(cells[x - 1][y]);
+            if (y > 0) { // TOP LEFT
+                neighbours.add(cells[x - 1][y - 1]);
+            }
+            if (y < cells[0].length - 1) { // TOP RIGHT
+                neighbours.add(cells[x - 1][y + 1]);
+            }
+        }
+        if (x < cells.length - 1) { // BOTTOM
+            neighbours.add(cells[x + 1][y]);
+            if (y > 0) { // BOTTOM LEFT
+                neighbours.add(cells[x + 1][y - 1]);
+            }
+            if (y < cells[0].length - 1) { // BOTTOM RIGHT
+                neighbours.add(cells[x + 1][y + 1]);
+            }
+        }
+        if (y > 0) { // LEFT
+            neighbours.add(cells[x][y - 1]);
+        }
+        if (y < cells[0].length - 1) { // RIGHT
+            neighbours.add(cells[x][y + 1]);
+        }
+
+        return neighbours;
+    }
+
+    @Override
+    public void computeStep() {
+        for (AstarCell neighbour : getNeighbours(start)) {
+            neighbour.setG(1);
+            neighbour.setH(heuristic.compute(neighbour.getX(), neighbour.getY(), end.getX(), end.getY()));
+        }
+        current = end;
+    }
+
+    @Override
+    public boolean isFinished() {
+        return end.equals(current);
     }
 }

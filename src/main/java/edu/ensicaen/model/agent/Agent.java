@@ -8,4 +8,5 @@ public interface Agent {
     void computeStep();
     Cell[][] getCells();
     Cell getCell(int x, int y);
+    boolean isFinished();
 }

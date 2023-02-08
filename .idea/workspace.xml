@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Adapting display to agent computation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/AvailableAgents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/ColorProxyForCell.java" afterDir="false" />
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Minor fix to implement agent computation into model update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +96,7 @@
       <workItem from="1675853783159" duration="6073000" />
       <workItem from="1675861523115" duration="3209000" />
       <workItem from="1675866273418" duration="23000" />
-      <workItem from="1675866313305" duration="3526000" />
+      <workItem from="1675866313305" duration="4500000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -183,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675869837878</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor fix to implement agent computation into model update">
+      <created>1675870073917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870073917</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +212,8 @@
     <MESSAGE value="Implementing simple maze display" />
     <MESSAGE value="Implementing Agent.Astar squeletton" />
     <MESSAGE value="Adapting display to agent computation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adapting display to agent computation" />
+    <MESSAGE value="Minor fix to implement agent computation into model update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fix to implement agent computation into model update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
