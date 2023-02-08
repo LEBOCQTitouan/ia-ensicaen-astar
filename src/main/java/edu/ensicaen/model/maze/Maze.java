@@ -4,6 +4,8 @@ import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.cell.CellType;
 import edu.ensicaen.model.maze.generation.MazeGenerationStrategy;
 import edu.ensicaen.model.maze.generation.MazeOnlyPathGeneration;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 public class Maze {
     private final Cell[][] cells;
@@ -17,7 +19,7 @@ public class Maze {
         }
     }
 
-    public static Maze generateEmptyMaze(int width, int height) {
+    public static @NotNull Maze generateEmptyMaze(int width, int height) {
         return new Maze(width, height);
     }
 

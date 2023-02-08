@@ -10,7 +10,7 @@ public class MazeRandomGeneration implements MazeGenerationStrategy {
     }
 
     @Override
-    public Maze generate(int width, int height, int startX, int startY, int endX, int endY) {;
+    public Maze generate(int width, int height, int startX, int startY, int endX, int endY) {
         return createWalls(width, height, Maze.generateMaze(width, height, startX, startY, endX, endY));
     }
 
@@ -19,8 +19,8 @@ public class MazeRandomGeneration implements MazeGenerationStrategy {
             for (int j = 0; j < height; j++) {
                 if (
                         Math.random() > 0.2
-                                && maze.getCell(i, j).getType() != CellType.START
-                                && maze.getCell(i, j).getType() != CellType.END
+                        && maze.getCell(i, j).getType() != CellType.START
+                        && maze.getCell(i, j).getType() != CellType.END
                 ) {
                     maze.getCell(i, j).setType(CellType.WALL);
                 }

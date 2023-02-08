@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Update vcs intellij idea">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeOnlyPathGeneration.java" afterDir="false" />
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Package maze generation renamed and creating Astar class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeGenerationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeGenerationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeRandomGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/AppFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/AppFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675853780694</updated>
-      <workItem from="1675853783159" duration="3034000" />
+      <workItem from="1675853783159" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -122,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675856160406</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix on generation strategy for the maze">
+      <created>1675856874458</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675856874458</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Package maze generation renamed and creating Astar class">
+      <created>1675857102662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675857102662</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +166,19 @@
     <MESSAGE value="Implementing basic maze logic and generation and building template display component" />
     <MESSAGE value="Implementing basic maze logic and generation and building template display component (minor warning in main for infinite while loop)" />
     <MESSAGE value="Update vcs intellij idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update vcs intellij idea" />
+    <MESSAGE value="Fix on generation strategy for the maze" />
+    <MESSAGE value="Package maze generation renamed and creating Astar class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Package maze generation renamed and creating Astar class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
