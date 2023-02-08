@@ -90,11 +90,22 @@ public class Astar implements Agent {
 
     @Override
     public void computeStep() {
-        for (AstarCell neighbour : getNeighbours(start)) {
-            neighbour.setG(1);
-            neighbour.setH(heuristic.compute(neighbour.getX(), neighbour.getY(), end.getX(), end.getY()));
+        if (openList.isEmpty()) { // no path available
+            current = end;
         }
-        current = end;
+
+        current = openList.remove();
+        if (current.equals(end)) {
+            System.out.println("Path found");
+        }
+        for (AstarCell neighbour : getNeighbours(current)) {
+            if (!closedList.contains(neighbour)) {
+                neighbour.setParent(current);
+                neighbour.setH(heuristic.compute(neighbour.getX(), neighbour.getY(), end.getX(), end.getY()));
+                openList.add(neighbour);
+            }
+        }
+        closedList.add(current);
     }
 
     @Override

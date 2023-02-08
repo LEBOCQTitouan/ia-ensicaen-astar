@@ -70,20 +70,22 @@ public class MazePresenter implements Presenter {
                 regenerateMaze = false;
             }
             // update model evolution if needed (trap, entity, etc.) here
+            updateModel = false;
+            // TODO implement button to compute all in one go
             if (!agent.isFinished())
                 stepAgent();
-            // TODO implement button to compute all in one go
-            updateModel = false;
         }
     }
 
     public void stepAgent() {
         agent.computeStep();
+        updateModel = true;
         updateUI = true;
     }
 
     public void computeAgent() {
         agent.compute();
+        updateModel = true;
         updateUI = true;
     }
 

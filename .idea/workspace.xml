@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Minor fix to implement agent computation into model update">
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Astar one step only and gradient on cost">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       <workItem from="1675853783159" duration="6073000" />
       <workItem from="1675861523115" duration="3209000" />
       <workItem from="1675866273418" duration="23000" />
-      <workItem from="1675866313305" duration="4500000" />
+      <workItem from="1675866313305" duration="6490000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675870073917</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Astar one step only and gradient on cost">
+      <created>1675871146254</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675871146254</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +220,8 @@
     <MESSAGE value="Implementing Agent.Astar squeletton" />
     <MESSAGE value="Adapting display to agent computation" />
     <MESSAGE value="Minor fix to implement agent computation into model update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fix to implement agent computation into model update" />
+    <MESSAGE value="Astar one step only and gradient on cost" />
+    <option name="LAST_COMMIT_MESSAGE" value="Astar one step only and gradient on cost" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -222,11 +230,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/ColorProxyForCell.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
