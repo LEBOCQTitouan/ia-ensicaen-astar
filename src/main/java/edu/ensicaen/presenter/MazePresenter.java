@@ -1,6 +1,14 @@
 package edu.ensicaen.presenter;
 
+import edu.ensicaen.model.maze.Maze;
+
 public class MazePresenter implements Presenter {
+    private Maze model;
+
+    public MazePresenter() {
+
+    }
+
     @Override
     public void updateUI() {
 

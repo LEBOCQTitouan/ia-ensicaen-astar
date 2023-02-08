@@ -1,7 +1,13 @@
 package edu.ensicaen;
 
+import edu.ensicaen.app.App;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        App app = new App();
+
+        app.setup();
+
+        while (true) app.next();
     }
 }
