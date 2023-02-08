@@ -16,7 +16,7 @@ public class Astar implements Agent {
     private final ArrayList<AstarCell> closedList;
     private Heuristic heuristic;
 
-    public Astar(AstarCell[][] cells, AstarCell start, AstarCell end) {
+    public Astar(Cell[][] cells, Cell start, Cell end) {
         this(cells, start, end, new ManhattanHeuristic());
     }
     public Astar(Cell[][] cells, Cell start, Cell end, Heuristic heuristic) {
@@ -44,5 +44,15 @@ public class Astar implements Agent {
     @Override
     public void computeStep() {
         // TODO
+    }
+
+    @Override
+    public AstarCell[][] getCells() {
+        return cells;
+    }
+
+    @Override
+    public AstarCell getCell(int x, int y) {
+        return cells[x][y];
     }
 }

@@ -1,6 +1,8 @@
 package edu.ensicaen.model.cell;
 
-public class Cell {
+import org.jetbrains.annotations.NotNull;
+
+public class Cell implements Comparable<Cell> {
     private CellType type;
     private final int x;
     private final int y;
@@ -25,5 +27,18 @@ public class Cell {
 
     public int getY() {
         return y;
+    }
+
+    /**
+     * Dummy function used for agent display.
+     * @return the cost of the cell (calculated by the agent 0 otherwise)
+     */
+    public double getCost() {
+        return 0;
+    }
+
+    @Override
+    public int compareTo(@NotNull Cell o) {
+        return 0;
     }
 }

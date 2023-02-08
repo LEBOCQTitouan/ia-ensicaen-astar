@@ -23,7 +23,9 @@ public class MazeOnlyPathGeneration implements MazeGenerationStrategy {
     public Maze generate(int width, int height, int startX, int startY, int endX, int endY) {
         Maze maze = Maze.generateEmptyMaze(width, height);
         maze.getCell(startX, startY).setType(CellType.START);
+        maze.setStart(maze.getCell(startX, startY));
         maze.getCell(endX, endY).setType(CellType.END);
+        maze.setEnd(maze.getCell(endX, endY));
         return maze;
     }
 }

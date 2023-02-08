@@ -1,5 +1,8 @@
 package edu.ensicaen.model.maze;
 
+import edu.ensicaen.model.agent.Agent;
+import edu.ensicaen.model.agent.Astar.Astar;
+import edu.ensicaen.model.agent.AvailableAgents;
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.cell.CellType;
 import edu.ensicaen.model.maze.generation.MazeGenerationStrategy;
@@ -8,6 +11,8 @@ import org.jetbrains.annotations.NotNull;
 
 public class Maze {
     private final Cell[][] cells;
+    private Cell start;
+    private Cell end;
 
     private Maze(int width, int height) {
         cells = new Cell[width][height];
@@ -46,5 +51,30 @@ public class Maze {
 
     public Cell[][] getCells() {
         return cells;
+    }
+
+    public Agent getAgent(AvailableAgents agent) {
+        // other agent not yet implemented
+        switch (agent) {
+            default -> {
+                return new Astar(cells, start, end);
+            }
+        }
+    }
+
+    public Cell getStart() {
+        return start;
+    }
+
+    public void setStart(Cell start) {
+        this.start = start;
+    }
+
+    public Cell getEnd() {
+        return end;
+    }
+
+    public void setEnd(Cell end) {
+        this.end = end;
     }
 }

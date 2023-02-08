@@ -45,4 +45,9 @@ public class AstarCell extends Cell {
     public double getF() {
         return f;
     }
+
+    @Override
+    public double getCost() {
+        return f;
+    }
 }
