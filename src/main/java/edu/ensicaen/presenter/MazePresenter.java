@@ -29,7 +29,7 @@ public class MazePresenter implements Presenter {
 
     // TODO metric based on number of cells and display size
     private int getMetrics() {
-        return 10;
+        return 20;
     }
 
     @Override
@@ -65,7 +65,8 @@ public class MazePresenter implements Presenter {
     public void updateModel() {
         if (updateModel) {
             if (regenerateMaze) {
-                model = Maze.generateMaze(10, 10, new MazeRandomGeneration());
+                // TODO dynamic maze generation
+                model = Maze.generateMaze(30, 30, new MazeRandomGeneration());
                 agent = model.getAgent(AvailableAgents.ASTAR);
                 regenerateMaze = false;
             }

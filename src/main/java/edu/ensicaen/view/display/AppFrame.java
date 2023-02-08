@@ -14,7 +14,7 @@ public class AppFrame extends JFrame {
 
         // TODO change temporary fixing the size of the display
         setResizable(false);
-        setSize(800, 600);
+        setSize(1000, 1000);
         // end TODO
 
         setLocationRelativeTo(null);
