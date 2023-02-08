@@ -4,7 +4,6 @@ import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.cell.CellType;
 import edu.ensicaen.model.maze.generation.MazeGenerationStrategy;
 import edu.ensicaen.model.maze.generation.MazeOnlyPathGeneration;
-import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 public class Maze {
@@ -43,5 +42,9 @@ public class Maze {
 
     public Cell getCell(int x, int y) {
         return cells[x][y];
+    }
+
+    public Cell[][] getCells() {
+        return cells;
     }
 }

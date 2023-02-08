@@ -1,7 +1,10 @@
 package edu.ensicaen.presenter;
 
+import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.maze.Maze;
+import edu.ensicaen.model.maze.generation.MazeRandomGeneration;
 import edu.ensicaen.view.display.MazePanel;
+import edu.ensicaen.view.logic.CellView;
 import edu.ensicaen.view.logic.Test;
 
 // TODO update only when needed
@@ -16,14 +19,32 @@ public class MazePresenter implements Presenter {
         display = new MazePanel();
         updateUI = true;
         updateModel = true;
-        regenerateMaze = false;
+        regenerateMaze = true;
+    }
+
+    // TODO metric based on number of cells and display size
+    private int getMetrics() {
+        return 10;
     }
 
     @Override
     public void updateUI() {
         if (updateUI) {
             display.clearDisplayables();
-            display.addDisplayable(new Test());
+
+            for (int i = 0; i < model.getCells().length; i++) {
+                for (int j = 0; j < model.getCells()[i].length; j++) {
+                    Cell current = model.getCell(i, j);
+                    display.addDisplayable(new CellView(
+                            i * getMetrics(),
+                            j * getMetrics(),
+                            getMetrics(),
+                            getMetrics(),
+                            current.getType())
+                    );
+                }
+            }
+
             display.revalidate();
             display.repaint();
             updateUI = false;
@@ -34,7 +55,7 @@ public class MazePresenter implements Presenter {
     public void updateModel() {
         if (updateModel) {
             if (regenerateMaze) {
-                model = Maze.generateMaze(100, 100);
+                model = Maze.generateMaze(100, 100, new MazeRandomGeneration());
                 regenerateMaze = false;
             }
             // TODO update model

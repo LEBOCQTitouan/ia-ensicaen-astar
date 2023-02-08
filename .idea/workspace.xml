@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Package maze generation renamed and creating Astar class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/Test.java" afterDir="false" />
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Stable MVP model for astar display">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/AppFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/AppFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -49,20 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.ensicaen.view.logic" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.ensicaen.Main" />
@@ -92,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675853780694</updated>
       <workItem from="1675853783159" duration="6073000" />
+      <workItem from="1675861523115" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675857102662</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Stable MVP model for astar display">
+      <created>1675861935470</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675861935470</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
     <MESSAGE value="Update vcs intellij idea" />
     <MESSAGE value="Fix on generation strategy for the maze" />
     <MESSAGE value="Package maze generation renamed and creating Astar class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Package maze generation renamed and creating Astar class" />
+    <MESSAGE value="Stable MVP model for astar display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable MVP model for astar display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
