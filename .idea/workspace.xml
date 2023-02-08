@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Project organisation">
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Implementing basic maze logic and generation and building template display component (minor warning in main for infinite while loop)">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeGenerationStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/strategy/MazeRandomGeneration.java" afterDir="false" />
@@ -13,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/app/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/Maze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/CellType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/CellType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675853780694</updated>
-      <workItem from="1675853783159" duration="1864000" />
+      <workItem from="1675853783159" duration="2348000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -111,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675854998641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing basic maze logic and generation and building template display component (minor warning in main for infinite while loop)">
+      <created>1675856130449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675856130449</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +140,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="Init project repo and vcs" />
     <MESSAGE value="Project organisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project organisation" />
+    <MESSAGE value="Implementing basic maze logic and generation and building template display component" />
+    <MESSAGE value="Implementing basic maze logic and generation and building template display component (minor warning in main for infinite while loop)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing basic maze logic and generation and building template display component (minor warning in main for infinite while loop)" />
   </component>
 </project>
