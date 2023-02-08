@@ -6,18 +6,22 @@ import edu.ensicaen.model.maze.Maze;
 public class MazeRandomGeneration implements MazeGenerationStrategy {
     @Override
     public Maze generate(int width, int height) {
-        Maze maze = Maze.generateEmptyMaze(width, height);
-        // setup start and end cells
-        int startX = (int) (Math.random() * width);
-        int startY = (int) (Math.random() * height);
-        int endX = (int) (Math.random() * width);
-        int endY = (int) (Math.random() * height);
-        maze.getCell(startX, startY).setType(CellType.START);
-        maze.getCell(endX, endY).setType(CellType.END);
-        // creating the wall randomly
+        return createWalls(width, height, Maze.generateMaze(width, height));
+    }
+
+    @Override
+    public Maze generate(int width, int height, int startX, int startY, int endX, int endY) {;
+        return createWalls(width, height, Maze.generateMaze(width, height, startX, startY, endX, endY));
+    }
+
+    private Maze createWalls(int width, int height, Maze maze) {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
-                if (Math.random() > 0.2) {
+                if (
+                        Math.random() > 0.2
+                                && maze.getCell(i, j).getType() != CellType.START
+                                && maze.getCell(i, j).getType() != CellType.END
+                ) {
                     maze.getCell(i, j).setType(CellType.WALL);
                 }
             }
