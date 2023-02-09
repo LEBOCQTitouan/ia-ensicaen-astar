@@ -1,14 +1,14 @@
 package edu.ensicaen.presenter;
 
 import edu.ensicaen.model.agent.Agent;
-import edu.ensicaen.model.agent.Astar.Astar;
 import edu.ensicaen.model.agent.AvailableAgents;
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.maze.Maze;
 import edu.ensicaen.model.maze.generation.MazeRandomGeneration;
 import edu.ensicaen.view.display.MazePanel;
 import edu.ensicaen.view.logic.CellView;
-import edu.ensicaen.view.logic.ColorProxyForCell;
+import edu.ensicaen.view.logic.colorUtil.ColorProxyForCell;
+import edu.ensicaen.view.logic.PathView;
 
 // TODO update only when needed
 public class MazePresenter implements Presenter {
@@ -29,7 +29,7 @@ public class MazePresenter implements Presenter {
 
     // TODO metric based on number of cells and display size
     private int getMetrics() {
-        return 20;
+        return 10;
     }
 
     @Override
@@ -37,6 +37,7 @@ public class MazePresenter implements Presenter {
         if (updateUI) {
             display.clearDisplayables();
 
+            // dislay cells
             for (int i = 0; i < agent.getCells().length; i++) {
                 for (int j = 0; j < agent.getCells()[i].length; j++) {
                     int x = i * getMetrics();
@@ -55,6 +56,15 @@ public class MazePresenter implements Presenter {
                 }
             }
 
+            if (agent.isFinished()) {
+                // display path
+                for (Cell cell : agent.getPath()) {
+                    int x = cell.getX() * getMetrics();
+                    int y = cell.getY() * getMetrics();
+                    display.addDisplayable(new PathView(x,y, getMetrics(), getMetrics()));
+                }
+            }
+
             display.revalidate();
             display.repaint();
             updateUI = false;
@@ -66,7 +76,7 @@ public class MazePresenter implements Presenter {
         if (updateModel) {
             if (regenerateMaze) {
                 // TODO dynamic maze generation
-                model = Maze.generateMaze(30, 30, new MazeRandomGeneration());
+                model = Maze.generateMaze(100, 100, new MazeRandomGeneration());
                 agent = model.getAgent(AvailableAgents.ASTAR);
                 regenerateMaze = false;
             }

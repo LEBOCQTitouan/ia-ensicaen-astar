@@ -3,11 +3,15 @@ package edu.ensicaen.model.agent.Astar;
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.cell.CellType;
 
+import java.util.UUID;
+
 public class AstarCell extends Cell {
     private AstarCell parent;
     private Double g;
     private double h;
     private double f;
+    private final String uniqueID = UUID.randomUUID().toString();
+
     public AstarCell(CellType type, int x, int y) {
         super(type, x, y);
         h = 0;
@@ -35,7 +39,7 @@ public class AstarCell extends Cell {
 
     public double getG() {
         if (g != null) {
-            return g.doubleValue();
+            return g;
         }
         // computing g
         if (parent == null)
@@ -65,5 +69,25 @@ public class AstarCell extends Cell {
     @Override
     public double getCost() {
         return f;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof AstarCell cell) {
+            return cell.getX() == getX() && cell.getY() == getY();
+        }
+        return super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return "AstarCell{" +
+                "x=" + getX() +
+                ", y=" + getY() +
+                ", f=" + f +
+                ", h=" + h +
+                ", g=" + g +
+                ", uniqueID='" + uniqueID + '\'' +
+                '}';
     }
 }

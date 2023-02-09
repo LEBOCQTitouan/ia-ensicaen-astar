@@ -38,7 +38,7 @@ public class Cell implements Comparable<Cell> {
     }
 
     @Override
-    public int compareTo(@NotNull Cell o) {
-        return 0;
+    public int compareTo(@NotNull Cell c) {
+        return (int) Math.round(getCost() - c.getCost());
     }
 }
