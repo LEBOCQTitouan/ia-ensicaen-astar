@@ -1,6 +1,6 @@
 package edu.ensicaen.view.display;
 
-import edu.ensicaen.view.logic.Displayable;
+import edu.ensicaen.view.logic.displayInterface.Displayable;
 
 import javax.swing.*;
 import java.awt.*;
