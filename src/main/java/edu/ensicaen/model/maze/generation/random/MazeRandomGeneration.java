@@ -1,7 +1,8 @@
-package edu.ensicaen.model.maze.generation;
+package edu.ensicaen.model.maze.generation.random;
 
 import edu.ensicaen.model.cell.CellType;
 import edu.ensicaen.model.maze.Maze;
+import edu.ensicaen.model.maze.generation.MazeGenerationStrategy;
 
 import java.util.Random;
 
@@ -9,7 +10,14 @@ public class MazeRandomGeneration implements MazeGenerationStrategy {
     private final double wallProbability = 0.2;
     @Override
     public Maze generate(int width, int height) {
-        return createWalls(width, height, Maze.generateMaze(width, height));
+        Random random = new Random();
+        // generating start x and start y
+        int startX = random.nextInt(width);
+        int startY = random.nextInt(height);
+        // generating end x and end y
+        int endX = random.nextInt(width);
+        int endY = random.nextInt(height);
+        return generate(width, height, startX, startY, endX, endY);
     }
 
     @Override

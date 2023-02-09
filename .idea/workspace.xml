@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Reorganising view files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/StructuredMazeGeneration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/colorUtil/ColorProxyForPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeGenerationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeGenerationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/ColorProxyForCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/colorUtil/ColorProxyForCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/Displayable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/displayInterface/Displayable.java" afterDir="false" />
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Starting implementing new maze generation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/corridor/StructuredMazeGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/random/MazeRandomGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/StructuredMazeGeneration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +100,7 @@
       <workItem from="1675866313305" duration="6490000" />
       <workItem from="1675885737625" duration="369000" />
       <workItem from="1675946154040" duration="604000" />
-      <workItem from="1675947061738" duration="3753000" />
+      <workItem from="1675947061738" duration="7009000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -225,7 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675950808245</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Reorganising view files">
+      <created>1675950842085</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675950842085</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Starting implementing new maze generation">
+      <created>1675950936027</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675950936027</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +271,8 @@
     <MESSAGE value="Display update for better understanding" />
     <MESSAGE value="Working aStar algorythm" />
     <MESSAGE value="Reorganising view files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorganising view files" />
+    <MESSAGE value="Starting implementing new maze generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting implementing new maze generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

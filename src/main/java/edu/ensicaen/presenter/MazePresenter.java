@@ -4,7 +4,7 @@ import edu.ensicaen.model.agent.Agent;
 import edu.ensicaen.model.agent.AvailableAgents;
 import edu.ensicaen.model.cell.Cell;
 import edu.ensicaen.model.maze.Maze;
-import edu.ensicaen.model.maze.generation.MazeRandomGeneration;
+import edu.ensicaen.model.maze.generation.corridor.StructuredMazeGeneration;
 import edu.ensicaen.view.display.MazePanel;
 import edu.ensicaen.view.logic.CellView;
 import edu.ensicaen.view.logic.colorUtil.ColorProxyForCell;
@@ -76,7 +76,7 @@ public class MazePresenter implements Presenter {
         if (updateModel) {
             if (regenerateMaze) {
                 // TODO dynamic maze generation
-                model = Maze.generateMaze(100, 100, new MazeRandomGeneration());
+                model = Maze.generateMaze(51, 51, new StructuredMazeGeneration());
                 agent = model.getAgent(AvailableAgents.ASTAR);
                 regenerateMaze = false;
             }
