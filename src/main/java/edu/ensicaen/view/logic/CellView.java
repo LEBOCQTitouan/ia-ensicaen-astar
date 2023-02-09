@@ -1,6 +1,7 @@
 package edu.ensicaen.view.logic;
 
-import edu.ensicaen.model.cell.CellType;
+import edu.ensicaen.view.logic.colorUtil.ColorProxyForCell;
+import edu.ensicaen.view.logic.displayInterface.Displayable;
 
 import java.awt.*;
 

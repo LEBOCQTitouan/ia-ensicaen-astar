@@ -1,4 +1,4 @@
-package edu.ensicaen.view.logic;
+package edu.ensicaen.view.logic.colorUtil;
 
 import edu.ensicaen.model.cell.CellType;
 
