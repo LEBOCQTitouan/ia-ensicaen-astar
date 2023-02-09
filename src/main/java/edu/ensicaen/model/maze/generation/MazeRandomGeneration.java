@@ -18,7 +18,6 @@ public class MazeRandomGeneration implements MazeGenerationStrategy {
     }
 
     private Maze createWalls(int width, int height, Maze maze) {
-        Random random = new Random();
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 if (

@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Working aStar algorythm">
+    <list default="true" id="148b7159-ca14-4397-9636-70797d1bb8ee" name="Changes" comment="Reorganising view files">
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/StructuredMazeGeneration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/PathView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/colorUtil/ColorProxyForPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/Astar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/agent/Astar/AstarCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/cell/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeGenerationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeGenerationStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeOnlyPathGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/presenter/MazePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/model/maze/generation/MazeRandomGeneration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/display/MazePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/CellView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/ColorProxyForCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/ensicaen/view/logic/colorUtil/ColorProxyForCell.java" afterDir="false" />
@@ -109,7 +104,7 @@
       <workItem from="1675866313305" duration="6490000" />
       <workItem from="1675885737625" duration="369000" />
       <workItem from="1675946154040" duration="604000" />
-      <workItem from="1675947061738" duration="3388000" />
+      <workItem from="1675947061738" duration="3753000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1675853807632</created>
@@ -216,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675886175581</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Working aStar algorythm">
+      <created>1675950725023</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675950725023</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reorganising view files">
+      <created>1675950808245</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675950808245</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +260,8 @@
     <MESSAGE value="Astar scan of whole map" />
     <MESSAGE value="Display update for better understanding" />
     <MESSAGE value="Working aStar algorythm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working aStar algorythm" />
+    <MESSAGE value="Reorganising view files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reorganising view files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

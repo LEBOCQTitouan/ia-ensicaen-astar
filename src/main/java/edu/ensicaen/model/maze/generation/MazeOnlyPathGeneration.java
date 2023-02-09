@@ -22,6 +22,16 @@ public class MazeOnlyPathGeneration implements MazeGenerationStrategy {
     @Override
     public Maze generate(int width, int height, int startX, int startY, int endX, int endY) {
         Maze maze = Maze.generateEmptyMaze(width, height);
+
+        // set cells at the border to be walls
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                if (i == 0 || i == width - 1 || j == 0 || j == height - 1) {
+                    maze.getCell(i, j).setType(CellType.WALL);
+                }
+            }
+        }
+
         maze.getCell(startX, startY).setType(CellType.START);
         maze.setStart(maze.getCell(startX, startY));
         maze.getCell(endX, endY).setType(CellType.END);
