@@ -18,7 +18,8 @@ public class App implements Sequencer {
 
     public void setup() {
         frame.setResizable(false);
-        frame.pack();
+        frame.setResizable(false);
+        frame.setSize(600, 600);
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);

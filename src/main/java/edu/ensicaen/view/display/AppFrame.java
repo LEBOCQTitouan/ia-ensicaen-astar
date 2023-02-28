@@ -12,11 +12,6 @@ public class AppFrame extends JFrame {
         mazePanel = presenter.getDisplay();
         add(mazePanel);
 
-        // TODO change temporary fixing the size of the display
-        setResizable(false);
-        setSize(1000, 1000);
-        // end TODO
-
         setLocationRelativeTo(null);
         setVisible(true);
     }
